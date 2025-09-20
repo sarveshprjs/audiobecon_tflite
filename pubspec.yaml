@@ -1,0 +1,44 @@
+name: sound_hazard_app
+description: A Flutter app for detecting surrounding sounds using YAMNet + TFLite
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Use flutter_sound instead of record
+  flutter_sound: ^9.2.13
+
+  # Permissions (mic, storage, etc.)
+  permission_handler: ^11.3.1
+
+  # Vibrations for alerts - use a newer version that supports v2 embedding
+  vibration: ^2.0.0
+
+  # TensorFlow Lite
+  tflite_flutter: ^0.11.0
+
+
+  # File system helpers
+  path_provider: ^2.1.2
+  path: ^1.9.0
+
+  # UI
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/yamnet.tflite
+    - assets/yamnet_class_map.csv
