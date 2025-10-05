@@ -1,5 +1,8 @@
 import 'dart:async';
+import 'dart:io';
+import 'dart:typed_data';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:flutter_sound/flutter_sound.dart';
 import 'package:path_provider/path_provider.dart';
@@ -40,8 +43,10 @@ class _SoundPageState extends State<SoundPage> with SingleTickerProviderStateMix
   bool _hasPermission = false;
   double _dbLevel = 0.0;
   late AnimationController _animationController;
+  String _processingTime = "0 ms";
   late List<double> _audioBars;
   Timer? _visualizerTimer;
+  Timer? _classificationTimer;
   String _currentSoundLabel = "No sound detected";
   double _currentConfidence = 0.0;
 
