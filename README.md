@@ -1,4 +1,4 @@
-# 🎧 AudioBecon TFLite  
+# AudioBecon TFLite  
 
 > Real-time **audio beacon detection** powered by **TensorFlow Lite** & **Flutter**, built to run **everywhere** – Android, iOS, Web, Windows, macOS, and Linux.  
 
@@ -37,3 +37,37 @@ flutter pub get
 
 # Run on your device
 flutter run
+
+📂 Project Structure
+
+audiobecon_tflite/
+│── android/       # Android specific code  
+│── ios/           # iOS specific code  
+│── lib/           # Flutter frontend  
+│── linux/         # Linux support  
+│── macos/         # macOS support  
+│── web/           # Web build support  
+│── windows/       # Windows support  
+│── assets/        # Audio models / sample data  
+│── test/          # Unit tests  
+
+🎯 Use Cases
+
+Assistive tech (audio navigation for accessibility).
+
+Smart homes & IoT with sound triggers.
+
+Education: learning how ML audio models run on-device.
+
+Any project needing lightweight audio signal recognition.
+
+
+🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to improve.
+
+📜 License
+
+This project is licensed under the MIT License – feel free to use and modify.
+
+✨ Made with Flutter & TensorFlow Lite to bring sound intelligence to all devices.
