@@ -1,16 +1,39 @@
-# new_sound_app
+# 🎧 AudioBecon TFLite  
 
-A new Flutter project.
+> Real-time **audio beacon detection** powered by **TensorFlow Lite** & **Flutter**, built to run **everywhere** – Android, iOS, Web, Windows, macOS, and Linux.  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🌟 About the Project  
+**AudioBecon TFLite** is a cross-platform application that uses **on-device machine learning** to detect and process audio signals. By integrating **TensorFlow Lite models** with a **Flutter frontend** and native code (C++, Swift), the project provides a lightweight, fast, and privacy-friendly way to process sounds without depending on the cloud.  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ Features  
+- 🔊 **Audio Beacon Detection** – Identify and respond to specific audio signals.  
+- 📱 **Cross-Platform** – Works on Android, iOS, Web, Windows, macOS, and Linux.  
+- ⚡ **On-Device Inference** – Powered by TensorFlow Lite for fast & private audio ML.  
+- 🖥️ **Flutter UI** – Beautiful and portable interface.  
+- 🛠️ **Native Performance** – C++ and Swift layers for optimized audio processing.  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🚀 Getting Started  
+
+### Prerequisites  
+- [Flutter](https://flutter.dev/docs/get-started/install) installed.  
+- Basic understanding of Dart and TensorFlow Lite.  
+
+### Installation  
+```bash
+# Clone the repository
+git clone https://github.com/Diksha-3905/audiobecon_tflite.git
+
+# Move into the project folder
+cd audiobecon_tflite
+
+# Get dependencies
+flutter pub get
+
+# Run on your device
+flutter run
