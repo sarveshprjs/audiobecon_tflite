@@ -46,6 +46,7 @@ class _SoundPageState extends State<SoundPage> with SingleTickerProviderStateMix
   String _processingTime = "0 ms";
   late List<double> _audioBars;
   Timer? _visualizerTimer;
+  Timer? _classificationTimer;
   String _currentSoundLabel = "No sound detected";
   double _currentConfidence = 0.0;
 
