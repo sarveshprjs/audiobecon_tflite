@@ -15,10 +15,10 @@ dependencies:
   flutter_sound: ^9.2.13
 
   # Permissions (mic, storage, etc.)
-  permission_handler: ^11.3.1
+  permission_handler: ^12.0.1
 
   # Vibrations for alerts - use a newer version that supports v2 embedding
-  vibration: ^2.0.0
+  vibration: ^3.1.4
 
   # TensorFlow Lite
   tflite_flutter: ^0.11.0
@@ -34,7 +34,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
+  flutter_lints: ^6.0.0
 
 flutter:
   uses-material-design: true

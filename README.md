@@ -1,16 +1,52 @@
-# new_sound_app
+# audiobecon_tflite
 
-A new Flutter project.
+## Project Title
+audiobecon_tflite
 
-## Getting Started
+## Description
+audiobecon_tflite is a cross-platform Flutter application for real-time audio classification using TensorFlow Lite. It uses the YAMNet model (`yamnet.tflite`) to recognize environmental sounds from microphone input or audio files. The app provides instant feedback on detected sound classes and works on mobile, desktop, and web.
 
-This project is a starting point for a Flutter application.
+## Installation
+1. **Clone the Repository**
+    ```sh
+    git clone https://github.com/yourusername/audiobecon_tflite.git
+    cd audiobecon_tflite
+    ```
+2. **Install Flutter**
+    - Follow instructions at [flutter.dev](https://flutter.dev/docs/get-started/install) for your OS.
+3. **Install Dependencies**
+    ```sh
+    flutter pub get
+    ```
+4. **Add YAMNet Model and Class Map**
+    - Ensure `assets/yamnet.tflite` and `assets/yamnet_class_map.csv` are present.
 
-A few resources to get you started if this is your first Flutter project:
+## Usage
+- **Run on Android/iOS**
+    ```sh
+    flutter run
+    ```
+- **Run on Desktop (Windows, macOS, Linux)**
+    ```sh
+    flutter run -d windows   # or macos, linux
+    ```
+- **Run on Web**
+    ```sh
+    flutter run -d chrome
+    ```
+- The app will launch and start listening for audio input, displaying detected sound classes.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Requirements / Dependencies
+- **Languages:** Dart
+- **Frameworks:** Flutter
+- **Libraries:** TensorFlow Lite (via Flutter plugin), audio plugins
+- **Assets:** `yamnet.tflite`, `yamnet_class_map.csv`
+- **Supported Platforms:** Android, iOS, Windows, macOS, Linux, Web
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Contributing
+- Fork the repository and submit pull requests.
+- Follow Dart and Flutter best practices.
+- Write clear commit messages and document code.
+
+## License
+No explicit license file found. Please check with the repository owner or add a license (e.g., MIT, Apache 2.0) for open-source contributions.
